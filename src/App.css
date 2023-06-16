@@ -28,9 +28,10 @@
 .heroDiv {
   display: grid;
   grid-template-columns: repeat(11,1fr);
-  grid-template-rows:repeat(4,70px);
+  grid-template-rows:repeat(4,auto,1fr);
   background-color: #495E57;
   background: cover;
+  grid-gap: 1%;
 }
 .herotitle {
   grid-column: 3 / 6;
@@ -77,7 +78,7 @@
   grid-column: 8 / 11;
   grid-row: 1/4;
   margin-top: 8%;
-  height: 135%;
+  height: 115%;
   width:60%;
 }
 
@@ -192,3 +193,33 @@
   font-size: 18pt 'medium';
 }
 
+.form{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 5;
+  grid-gap: 4rem;
+  padding-left:19%;
+  padding-right:19%;
+  padding-bottom:19%;
+  padding-top:10%;
+  font-family: 'Karla';
+  font-size: 18pt 'bold';
+}
+.finishreservecontainer{
+  grid-column: 1/2 span;
+  grid-row:5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.finishreserve{
+  height:40px;
+  border-radius: 15px;
+  margin-bottom:15%;
+  background-color:#F4CE14;
+  border: 1px #000000;
+  font-family: 'Karla';
+  font-size: 18pt 'medium';
+}
