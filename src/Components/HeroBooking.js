@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'   
-export default function Hero() {
+export default function HeroBooking() {
   const navigate = useNavigate()
   return (
     <div class='heroDiv'>
@@ -8,7 +8,7 @@ export default function Hero() {
     <h3 class = 'herosub-title'> Chicago </h3>
     <p class = 'herobody'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam.</p>
     <img class = 'heroimg' src = './restauranfood.jpg' ></img>
-    <button class='reserve' onClick={() => navigate("/reservations")}>Reserve a Table</button>
+    <button class='reserve' onClick={() => navigate("/")}>Go Back</button>
     </div>
   )
 }
