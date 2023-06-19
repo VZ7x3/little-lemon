@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen,fireEvent } from '@testing-library/react';
 import App from './App';
+import BookingPage from './Components/BookingPage';
+import Main from "./Components/Main";
+import BookingForm from "./Components/BookingForm"
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('Renders the BookingForm heading', () => {
+  render(<BookingForm />);
+  const headingElement = screen.findByText("Choose time");
+  expect(headingElement).toBeInTheDocument();
+})

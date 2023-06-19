@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import BookingPage from './Components/BookingPage';
 import HomePage from './Components/HomePage';
+import Main from './Components/Main'
 function App() {
   return (
   <html class='html'>
@@ -24,10 +25,7 @@ function App() {
         <Link to = 'login'>Login</Link>
     </nav>
     </header>
-    <Routes>
-    <Route exact path='/' element={< HomePage/>}></Route>
-    <Route exact path='/reservations' element={< BookingPage />}></Route>
-    </Routes>
+    <Main />
     </Router>
   </html>
   );
