@@ -1,9 +1,8 @@
 import React from 'react'
 import {useState} from "react"; 
 import { submitAPI } from './Api';
-import { useNavigate, Router } from 'react-router-dom';
-import SuccessPage from './SuccessPage';
-import { render } from '@testing-library/react';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function BookingForm({availableTimes,handleDateChange }) {
 

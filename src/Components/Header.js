@@ -11,9 +11,9 @@ import HomePage from './HomePage';
 export default function Header() {
   return (
     <Router>
-    <header class='header'> 
-    <nav class="navbar">
-        <div><img src = '/Logo.svg' ></img></div>
+    <header className='header'> 
+    <nav className="navbar">
+        <div><img src = '/Logo.svg' alt='logo' ></img></div>
         <Link to='/'>Home</Link>
         <Link to = '/about'>About</Link>
         <Link to = '/menu'>Menu</Link>

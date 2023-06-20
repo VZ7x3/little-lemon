@@ -1,14 +1,14 @@
 import React from 'react'
 
-export default function Card({key,image,title,price,description}) {
+export default function Card({image,title,price,description}) {
   return (
-  <div class="card">
-    <div class = 'cardcontainer'>
-  <img class = 'cardimage' src={image}></img></div>
-    <h5 class="cardtitle">{title}</h5>
-    <h5 class = 'cardprice'>${price}</h5>
-    <p class="carddescription">{description}</p>
-    <button class="order">Order a Delivery</button>
+  <div className="card">
+    <div className = 'cardcontainer'>
+  <img className = 'cardimage' alt='cardimage' src={image}></img></div>
+    <h5 className="cardtitle">{title}</h5>
+    <h5 className = 'cardprice'>${price}</h5>
+    <p className="carddescription">{description}</p>
+    <button className="order">Order a Delivery</button>
   </div>
 )
 }

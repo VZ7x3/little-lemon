@@ -24,10 +24,10 @@ export default function Specials() {
       getImageSrc: () => require("../images/Lemon Dessert.jpg"),
     },]
   return (
-    <div class='specials'>
-      <h1 class='thisweek'>This week specials!</h1>
-      <button class='onlinemenu'>Online Menu</button>
-      <div class = 'cards'>
+    <div className='specials'>
+      <h1 className='thisweek'>This week specials!</h1>
+      <button className='onlinemenu'>Online Menu</button>
+      <div className = 'cards'>
       {specials.map((special)=>(
         <Card
          key = {specials.indexOf(special)}
